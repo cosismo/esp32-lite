@@ -10,7 +10,7 @@ Las principales diferencias con respecto al ESP32 devkit son:
 3) Usa el chip USB a serial ch340g en lugar del cp2102 ( generalmente requiere drivers, se te envía una liga en la información técnica)  
 4) Es de dimensiones un poco más pequeñas. (50 x 25.4mm)  
 5) El PCB y su construcción física en general es un poco más delgado/ frágil.  
-6) Incluye un circuito de carga para aceptar batería. (ADVERTENCIA: EL CHIP DE CARGA DE LA BATERIA NO TIENE PROTECCIÓN PARA SOBRECARGA, POR LO QUE UNA VEZ CARGADA DEBE DESCONECTARSE EL MICROUSB PARA NO OCASIONAR QUE SE SOBRECARGUE LA BATERÍA, LO QUE PUEDE CAUSAR QUE SE DAÑE E INCLUSO EN EL PEOR DE LOS CASOS, QUE CAUSE UN INCENDIO. Esto no es un bug o defecto, sino una decisión de diseño para abaratar costos. La placa puede funcionar sin la batería, alimentada normalmente por el microUSB.)
+6) Incluye un circuito de carga para aceptar batería. (ADVERTENCIA: EL CHIP DE CARGA DE LA BATERIA NO TIENE PROTECCIÓN PARA SOBRECARGA, POR LO QUE UNA VEZ CARGADA DEBE DESCONECTARSE EL MICROUSB PARA NO OCASIONAR QUE SE SOBRECARGUE LA BATERÍA, LO QUE PUEDE CAUSAR QUE SE DAÑE E INCLUSO EN EL PEOR DE LOS CASOS, QUE CAUSE UN INCENDIO. Esto no es un bug o defecto, sino una decisión de diseño para abaratar costos. La placa puede funcionar sin la batería, alimentada normalmente por el microUSB.)  
 
 
 ![Cosismo ESP32 Lite](https://raw.githubusercontent.com/cosismo/esp32-lite/master/esp32-lite-pinout.jpg)

@@ -1,4 +1,4 @@
-### ESP32 Dev kit
+### ESP32 Lite
 
 Bienvenido al Internet de las Cosas.
 

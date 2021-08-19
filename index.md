@@ -4,8 +4,8 @@ Bienvenido al Internet de las Cosas.
 
  El 90% de la información para el ESP32 Devkit aplica para esta placa. En el IDE, te recomendamos que selecciones la placa "ESP32 Dev Module". El led se puede controlar definiéndolo como el pin 22 (#define LED_BUILTIN 22) en el ejmplo blink. Un segundo led enciende cuando conectas el micro USB, vas a notar que parpadea de manera tenue, esto es normal en este modelo.
 
-Las principales diferenciascon respecto al ESP32 devkit son:
-1) No tiene los pines soldados (incluye las dos barras de pines como se muestra en la foto 1)
+Las principales diferenciascon respecto al ESP32 devkit son:  
+1) No tiene los pines soldados (incluye las dos barras de pines como se muestra en la foto 1)  
 2) El chip ESP32 no está dentro de una armadura metálica, por lo que puede ser un poco más sensible a interferencias.
 3) Usa el chip USB a serial ch340g en lugar del cp2102 ( generalmente requiere drivers, se te envía una liga en la información técnica)
 4) Es de dimensiones un poco más pequeñas. (50 x 25.4mm)

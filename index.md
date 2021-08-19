@@ -12,7 +12,7 @@ Las principales diferenciascon respecto al ESP32 devkit son:
 6) Incluye un circuito de carga para aceptar batería. (ADVERTENCIA: EL CHIP DE CARGA DE LA BATERIA NO TIENE PROTECCIÓN PARA SOBRECARGA, POR LO QUE UNA VEZ CARGADA DEBE DESCONECTARSE EL MICROUSB PARA NO OCASIONAR QUE SE SOBRECARGUE LA BATERÍA, LO QUE PUEDE CAUSAR QUE SE DAÑE E INCLUSO EN EL PEOR DE LOS CASOS, QUE CAUSE UN INCENDIO. Esto no es un bug o defecto, sino una decisión de diseño para abaratar costos. La placa puede funcionar sin la batería, alimentada normalmente por el microUSB.)
 
 
-![Cosismo ESP32 Lite](https://raw.githubusercontent.com/cosismo/esp32-devkit/master/esp32-lite.pinout.jpg)
+![Cosismo ESP32 Lite](https://raw.githubusercontent.com/cosismo/esp32-devkit/master/esp32-lite-pinout.jpg)
 
 La guía más básica para iniciar a programar el ESP32 con Arduino IDE es la que sigue (recuerda elegir el modelo ESP32 Dev Module):  
 [Programando el ESP32 con el Arduino IDE](https://www.profetolocka.com.ar/2020/07/09/programando-el-esp-32-con-el-arduino-ide/)

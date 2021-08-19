@@ -2,13 +2,19 @@
 
 Bienvenido al Internet de las Cosas.
 
-Protip: para cargar el sketch / bin a tu ESP32, presiona y deja presionado el botón "boot" (también conocido como "load") mientras lo transfieres.  
-Si no lo haces probablemente no puedas cargar el sketch y se te presentarán errores como los que se describen en este post:  
-[https://github.com/espressif/arduino-esp32/issues/1253](https://github.com/espressif/arduino-esp32/issues/1253)  
-Actualización 2021: Para evitar tener que presionar el botón de boot para cargar el sketch, algunas tarjetas nuevas tienen un rediseño que incluye un capacitor de montaje superficial, como el que se muestra en la siguiente imagen. Si tu placa cuenta con este componente, puedes obviar el paso anterior.  
-![boot smd capacitor](https://raw.githubusercontent.com/cosismo/esp32-devkit/master/capacitoresp32.png)
+ El 90% de la información para el ESP32 Devkit aplica para esta placa. En el IDE, te recomendamos que selecciones la placa "ESP32 Dev Module". El led se puede controlar definiéndolo como el pin 22.
+Las principales diferenciascon respecto al ESP32 devkit son:
+1) No tiene los pines soldados (incluye las dos barras de pines como se muestra en la foto 1)
+2) El chip ESP32 no está dentro de una armadura metálica, por lo que puede ser un poco más sensible a interferencias.
+3) Usa el chip USB a serial ch340g en lugar del cp2102 ( generalmente requiere drivers, se te envía una liga en la información técnica)
+4) Es de dimensiones un poco más pequeñas. (50 x 25.4mm)
+5) El PCB y su construcción física en general es un poco más delgado/ frágil.
+6) Incluye un circuito de carga para aceptar batería. (ADVERTENCIA: EL CHIP DE CARGA DE LA BATERIA NO TIENE PROTECCIÓN PARA SOBRECARGA, POR LO QUE UNA VEZ CARGADA DEBE DESCONECTARSE EL MICROUSB PARA NO OCASIONAR QUE SE SOBRECARGUE LA BATERÍA, LO QUE PUEDE CAUSAR QUE SE DAÑE E INCLUSO EN EL PEOR DE LOS CASOS, QUE CAUSE UN INCENDIO. Esto no es un bug o defecto, sino una decisión de diseño para abaratar costos. La placa puede funcionar sin la batería, alimentada normalmente por el microUSB.)
 
-La guía más básica para iniciar a programar el ESP32 con Arduino IDE es la que sigue (recuerda elegir el modelo DOIT ESP32 DEVKIT V1):  
+
+![Cosismo ESP32 Lite](https://raw.githubusercontent.com/cosismo/esp32-devkit/master/esp32lite.png)
+
+La guía más básica para iniciar a programar el ESP32 con Arduino IDE es la que sigue (recuerda elegir el modelo ESP32 Dev Module):  
 [Programando el ESP32 con el Arduino IDE](https://www.profetolocka.com.ar/2020/07/09/programando-el-esp-32-con-el-arduino-ide/)
 
 Para comenzar a utilizar tu ESP32 y encontrar toda la información técnica, te recomendamos las siguientes ligas:
@@ -37,17 +43,11 @@ Tutoriales básicos en español](https://www.youtube.com/playlist?list=PL2xmtLUb
 * Arduino. 
 [Librerías oficiales Arduino](https://github.com/espressif/arduino-esp32)
 
-* Pinout Devkit. 
-[Distribución de los pines para el modelo DOIT ESP32 devkit v1](https://raw.githubusercontent.com/playelek/pinout-doit-32devkitv1/master/pinoutDOIT32devkitv1.png)
-
-* Pinout WROOM. 
-[Distribución de los pines para el modelo WROOM32](https://drive.google.com/file/d/1mg0xArQDeQ9RXl4M13djkiGNfexS9YOk/view?usp=sharing)
-
 * Foro oficial.
 [Foro y mucha información](https://esp32.com/)
 
 * Driver USB
-[Driver USB para el modelo DOIT ESP32 devkit v1](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+[Driver USB CH340 para el modelo ESP32 Lite](https://cosismo.github.io/usbttl-ch340)
 
 ¡Suerte!
 
